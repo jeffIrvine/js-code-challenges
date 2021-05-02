@@ -31,14 +31,14 @@ skip('It should return the message with all uppercase characters', assert => {
     assert.equal(result, 'HELLO BOOTCAMP 2 STUDENTS!');
 });
   
-test('It should add the number 8 to the array five times', assert => {
+skip('It should add the number 8 to the array five times', assert => {
     const array = [];
     const result = addNumbers(8, array, 5, addValues);
     assert.equal(array, result);
     assert.deepEqual(array, [8, 8, 8, 8, 8]);
 });
   
-skip('It should remove three elements from the array', assert => {
+test('It should remove three elements from the array', assert => {
     const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     const result = removeElements(array, removeOne);
     assert.equal(array, result);
