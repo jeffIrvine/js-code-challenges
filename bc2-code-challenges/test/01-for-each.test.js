@@ -51,7 +51,7 @@ skip('It should remove three elements from the array', assert => {
     assert.deepEqual(array, [1, 2, 3, 4, 5, 6, 7]);
 });
   
-test('It should remove three elements from the array', assert => {
+skip('It should remove three elements from the array', assert => {
     const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     const result = removeWithAnon(array);
     assert.equal(array, result);
@@ -59,7 +59,7 @@ test('It should remove three elements from the array', assert => {
 });
   
     
-skip('It should only add the available items to the list', assert => {
+test('It should only add the available items to the list', assert => {
     const inventory = [
         { name: 'apples', available: true }, 
         { name: 'pears', available: true }, 
