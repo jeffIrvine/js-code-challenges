@@ -22,7 +22,7 @@ Run your tests from the browser using live-server, or console via: npm test
 ------------------------------------------------------------------------------------------------ */
 
 
-test('It should append without modifying the original', (assert) => {
+skip('It should append without modifying the original', (assert) => {
     const a = 'This is my story.';
     const b = appendTheEnd(a);
 
@@ -31,7 +31,7 @@ test('It should append without modifying the original', (assert) => {
 });
 
 
-skip('It should append by modifying the original', (assert) => {
+test('It should append by modifying the original', (assert) => {
     const a = ['Yes', 'it', 'is'];
     appendFirstToLast(a);
 
