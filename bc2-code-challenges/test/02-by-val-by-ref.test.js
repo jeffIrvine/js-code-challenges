@@ -39,7 +39,7 @@ skip('It should append by modifying the original', (assert) => {
 });
 
 
-test('It should add a property to an object', (assert) => {
+skip('It should add a property to an object', (assert) => {
     const a = { fullName: 'Octavia Butler' };
     addBirthYearProperty(a, 1947);
 
@@ -47,7 +47,7 @@ test('It should add a property to an object', (assert) => {
 });
 
 
-skip('It should add a property to every object in an array', (assert) => {
+test('It should add a property to every object in an array', (assert) => {
     const a = [
         { fullName: 'Octavia Butler' }, 
         { fullName: 'Ray Bradbury' }, 
