@@ -40,7 +40,7 @@ skip('It should sort strings alphabetically', assert => {
     assert.deepEqual(alphabetize([]), []);
 });
 
-test('It should sort strings by length', assert => {
+skip('It should sort strings by length', assert => {
     const ans = sortByLength(['alphabet', 'zebra', 'elephants', 'carrot']);
     assert.deepEqual(ans, ['zebra', 'carrot', 'alphabet', 'elephants']);
     assert.deepEqual(sortByLength(['a', 'bc', '']), ['', 'a', 'bc']);
@@ -48,7 +48,7 @@ test('It should sort strings by length', assert => {
     assert.deepEqual(sortByLength([]), []);
 });
 
-skip('It should alphabetize without regard to capitalization', assert => {
+test('It should alphabetize without regard to capitalization', assert => {
     const result = alphabetizeBetter(['Alice', 'apple', 'alert', 'Average']);
     assert.deepEqual(result, ['alert', 'Alice', 'apple', 'Average']);
     const result2 = alphabetizeBetter(['alphabet', 'Zebra', 'Alphabet', 'carrot']);
