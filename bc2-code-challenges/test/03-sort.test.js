@@ -57,7 +57,7 @@ skip('It should alphabetize without regard to capitalization', assert => {
     assert.deepEqual(result2.slice(2), ['carrot', 'Zebra']);
 });
 
-test('It should sort items by their price', assert => {
+skip('It should sort items by their price', assert => {
     assert.deepEqual(sortByPrice([
         { name: 'Sweatshirt', price: 45 },
         { name: 'Bookmark', price: 2.50 },
@@ -71,7 +71,7 @@ test('It should sort items by their price', assert => {
     assert.deepEqual(sortByPrice([]), []);
 });
 
-skip('It should sort numbers by their length', assert => {
+test('It should sort numbers by their length', assert => {
     assert.deepEqual(sortNumbersByLength([10, 2.8, 1, -47.75]), [1, 10, 2.8, -47.75]);
     assert.deepEqual(sortNumbersByLength([100, 2.82, 1, -47.75]), [1, 100, 2.82, -47.75]);
     const sameLength = sortNumbersByLength([1, 2, 3]);
